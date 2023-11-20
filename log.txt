@@ -1,0 +1,117 @@
+2023-11-16 14:10:38,925 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-11-16 14:10:42,251 [WARNING] django.request: Not Found: /favicon.ico
+2023-11-16 14:11:11,253 [WARNING] django.request: Not Found: /ru/shop/users/5/orders/
+2023-11-16 14:18:26,517 [INFO] django.utils.autoreload: /home/user/Документы/Skillbox/PyCharmProjects/Education/Django_project/mysite/shopapp/views.py changed, reloading.
+2023-11-16 14:18:26,819 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-11-16 14:21:54,142 [WARNING] django.request: Not Found: /ru/shop/users/8/orders/export/
+2023-11-18 08:59:52,402 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-11-18 08:59:56,457 [WARNING] django.request: Not Found: /favicon.ico
+2023-11-18 08:59:57,962 [ERROR] django.request: Internal Server Error: /ru/shop/users/1/orders/export/
+Traceback (most recent call last):
+  File "/home/user/Документы/Skillbox/PyCharmProjects/Education/Advanced/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/user/Документы/Skillbox/PyCharmProjects/Education/Advanced/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/user/Документы/Skillbox/PyCharmProjects/Education/Advanced/venv/lib/python3.10/site-packages/sentry_sdk/integrations/django/views.py", line 84, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+  File "/home/user/Документы/Skillbox/PyCharmProjects/Education/Advanced/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/user/Документы/Skillbox/PyCharmProjects/Education/Advanced/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/user/Документы/Skillbox/PyCharmProjects/Education/Advanced/venv/lib/python3.10/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/user/Документы/Skillbox/PyCharmProjects/Education/Advanced/venv/lib/python3.10/site-packages/django/utils/decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/user/Документы/Skillbox/PyCharmProjects/Education/Django_project/mysite/shopapp/views.py", line 426, in get
+    if request.user.is_authenticated():
+TypeError: 'bool' object is not callable
+2023-11-18 09:00:13,858 [ERROR] django.request: Internal Server Error: /ru/shop/users/2/orders/export/
+Traceback (most recent call last):
+  File "/home/user/Документы/Skillbox/PyCharmProjects/Education/Advanced/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/user/Документы/Skillbox/PyCharmProjects/Education/Advanced/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/user/Документы/Skillbox/PyCharmProjects/Education/Advanced/venv/lib/python3.10/site-packages/sentry_sdk/integrations/django/views.py", line 84, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+  File "/home/user/Документы/Skillbox/PyCharmProjects/Education/Advanced/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/user/Документы/Skillbox/PyCharmProjects/Education/Advanced/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/user/Документы/Skillbox/PyCharmProjects/Education/Advanced/venv/lib/python3.10/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/user/Документы/Skillbox/PyCharmProjects/Education/Advanced/venv/lib/python3.10/site-packages/django/utils/decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/user/Документы/Skillbox/PyCharmProjects/Education/Django_project/mysite/shopapp/views.py", line 426, in get
+    if request.user.is_authenticated():
+TypeError: 'bool' object is not callable
+2023-11-18 09:01:39,409 [INFO] django.utils.autoreload: /home/user/Документы/Skillbox/PyCharmProjects/Education/Django_project/mysite/shopapp/views.py changed, reloading.
+2023-11-18 09:01:39,695 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-11-18 09:01:41,267 [ERROR] django.request: Internal Server Error: /ru/shop/users/2/orders/export/
+Traceback (most recent call last):
+  File "/home/user/Документы/Skillbox/PyCharmProjects/Education/Advanced/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/user/Документы/Skillbox/PyCharmProjects/Education/Advanced/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/user/Документы/Skillbox/PyCharmProjects/Education/Advanced/venv/lib/python3.10/site-packages/sentry_sdk/integrations/django/views.py", line 84, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+  File "/home/user/Документы/Skillbox/PyCharmProjects/Education/Advanced/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/user/Документы/Skillbox/PyCharmProjects/Education/Advanced/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/user/Документы/Skillbox/PyCharmProjects/Education/Advanced/venv/lib/python3.10/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/user/Документы/Skillbox/PyCharmProjects/Education/Advanced/venv/lib/python3.10/site-packages/django/utils/decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/user/Документы/Skillbox/PyCharmProjects/Education/Django_project/mysite/shopapp/views.py", line 426, in get
+    if request.user.is_authenicated:
+  File "/home/user/Документы/Skillbox/PyCharmProjects/Education/Advanced/venv/lib/python3.10/site-packages/django/utils/functional.py", line 268, in inner
+    return func(_wrapped, *args)
+AttributeError: 'User' object has no attribute 'is_authenicated'
+2023-11-18 09:01:41,986 [ERROR] django.request: Internal Server Error: /ru/shop/users/2/orders/export/
+Traceback (most recent call last):
+  File "/home/user/Документы/Skillbox/PyCharmProjects/Education/Advanced/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/user/Документы/Skillbox/PyCharmProjects/Education/Advanced/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/user/Документы/Skillbox/PyCharmProjects/Education/Advanced/venv/lib/python3.10/site-packages/sentry_sdk/integrations/django/views.py", line 84, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+  File "/home/user/Документы/Skillbox/PyCharmProjects/Education/Advanced/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/user/Документы/Skillbox/PyCharmProjects/Education/Advanced/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/user/Документы/Skillbox/PyCharmProjects/Education/Advanced/venv/lib/python3.10/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/user/Документы/Skillbox/PyCharmProjects/Education/Advanced/venv/lib/python3.10/site-packages/django/utils/decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/user/Документы/Skillbox/PyCharmProjects/Education/Django_project/mysite/shopapp/views.py", line 426, in get
+    if request.user.is_authenicated:
+  File "/home/user/Документы/Skillbox/PyCharmProjects/Education/Advanced/venv/lib/python3.10/site-packages/django/utils/functional.py", line 268, in inner
+    return func(_wrapped, *args)
+AttributeError: 'User' object has no attribute 'is_authenicated'
+2023-11-18 09:05:06,100 [INFO] django.utils.autoreload: /home/user/Документы/Skillbox/PyCharmProjects/Education/Django_project/mysite/shopapp/views.py changed, reloading.
+2023-11-18 09:05:06,403 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-11-18 09:08:47,975 [INFO] django.utils.autoreload: /home/user/Документы/Skillbox/PyCharmProjects/Education/Django_project/mysite/shopapp/views.py changed, reloading.
+2023-11-18 09:08:48,254 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-11-18 09:08:51,042 [ERROR] django.request: Internal Server Error: /ru/shop/users/2/orders/export/
+Traceback (most recent call last):
+  File "/home/user/Документы/Skillbox/PyCharmProjects/Education/Advanced/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/user/Документы/Skillbox/PyCharmProjects/Education/Advanced/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/user/Документы/Skillbox/PyCharmProjects/Education/Advanced/venv/lib/python3.10/site-packages/sentry_sdk/integrations/django/views.py", line 84, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+  File "/home/user/Документы/Skillbox/PyCharmProjects/Education/Advanced/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/user/Документы/Skillbox/PyCharmProjects/Education/Advanced/venv/lib/python3.10/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/user/Документы/Skillbox/PyCharmProjects/Education/Advanced/venv/lib/python3.10/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/user/Документы/Skillbox/PyCharmProjects/Education/Advanced/venv/lib/python3.10/site-packages/django/utils/decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/user/Документы/Skillbox/PyCharmProjects/Education/Django_project/mysite/shopapp/views.py", line 426, in get
+    if user_id in User:
+TypeError: argument of type 'ModelBase' is not iterable
+2023-11-18 09:20:43,644 [INFO] django.utils.autoreload: /home/user/Документы/Skillbox/PyCharmProjects/Education/Django_project/mysite/shopapp/views.py changed, reloading.
+2023-11-18 09:20:43,955 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-11-18 10:00:41,570 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-11-18 10:01:00,220 [WARNING] django.request: Not Found: /ru/shop/users/5/orders/export/

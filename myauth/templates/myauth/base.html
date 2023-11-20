@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <title>
+      {% block title %}
+        Base Title
+      {% endblock title %}
+    </title>
+    <style>
+        * {
+        font-family: 'Roboto', sans-serif;
+           }
+    </style>
+</head>
+<body>
+
+{% block body %}
+  Base body
+{% endblock %}
+
+<div>
+  {% now 'H:i' %}
+</div>
+<div>
+  {% now 'l' as current_weekday %}
+  Today is {{ current_weekday }}
+</div>
+</body>
+</html>

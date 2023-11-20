@@ -1,0 +1,119 @@
+[
+  {
+    "model": "shopapp.product",
+    "pk": 1,
+    "fields": {
+      "name": "Laptop",
+      "description": "it's very smart",
+      "price": "1999.00",
+      "discount": 10,
+      "created_at": "2023-08-04T15:23:39.737Z",
+      "archived": true,
+      "created_by": 1
+    }
+  },
+  {
+    "model": "shopapp.product",
+    "pk": 2,
+    "fields": {
+      "name": "Desktop",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "price": "4000.00",
+      "discount": 0,
+      "created_at": "2023-08-04T15:23:39.737Z",
+      "archived": false,
+      "created_by": 1
+    }
+  },
+  {
+    "model": "shopapp.product",
+    "pk": 3,
+    "fields": {
+      "name": "Smartphone",
+      "description": "Lorem ipsum",
+      "price": "987.00",
+      "discount": 25,
+      "created_at": "2023-08-04T15:23:39.737Z",
+      "archived": true,
+      "created_by": 1
+    }
+  },
+  {
+    "model": "shopapp.product",
+    "pk": 4,
+    "fields": {
+      "name": "Tablet",
+      "description": "great tablet",
+      "price": "1234.00",
+      "discount": 0,
+      "created_at": "2023-08-17T17:31:07.182Z",
+      "archived": false,
+      "created_by": 1
+    }
+  },
+  {
+    "model": "shopapp.product",
+    "pk": 5,
+    "fields": {
+      "name": "Phone2",
+      "description": "phone 2 is better than phone 1\r\nthis is a great phone!",
+      "price": "1234.00",
+      "discount": 10,
+      "created_at": "2023-08-17T17:44:15.631Z",
+      "archived": true,
+      "created_by": 1
+    }
+  },
+  {
+    "model": "shopapp.product",
+    "pk": 7,
+    "fields": {
+      "name": "Tablet 2",
+      "description": "a new tablet",
+      "price": "1500.00",
+      "discount": 15,
+      "created_at": "2023-08-17T18:32:21.188Z",
+      "archived": false,
+      "created_by": 1
+    }
+  },
+  {
+    "model": "shopapp.product",
+    "pk": 8,
+    "fields": {
+      "name": "Iphone",
+      "description": "a new product",
+      "price": "1005.00",
+      "discount": 50,
+      "created_at": "2023-08-26T09:45:35.768Z",
+      "archived": false,
+      "created_by": 1
+    }
+  },
+  {
+    "model": "shopapp.product",
+    "pk": 9,
+    "fields": {
+      "name": "Telephone",
+      "description": "New",
+      "price": "55.00",
+      "discount": 5,
+      "created_at": "2023-08-26T12:23:14.937Z",
+      "archived": true,
+      "created_by": 1
+    }
+  },
+  {
+    "model": "shopapp.product",
+    "pk": 10,
+    "fields": {
+      "name": "Iphone 11",
+      "description": "This is Nice!",
+      "price": "7500.00",
+      "discount": 50,
+      "created_at": "2023-09-11T19:25:19.382Z",
+      "archived": false,
+      "created_by": 1
+    }
+  }
+]

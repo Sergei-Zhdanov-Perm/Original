@@ -115,3 +115,172 @@ TypeError: argument of type 'ModelBase' is not iterable
 2023-11-18 09:20:43,955 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
 2023-11-18 10:00:41,570 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
 2023-11-18 10:01:00,220 [WARNING] django.request: Not Found: /ru/shop/users/5/orders/export/
+2023-11-22 21:26:51,819 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-11-22 21:27:36,084 [WARNING] django.request: Not Found: /
+2023-11-22 21:27:36,120 [WARNING] django.request: Not Found: /favicon.ico
+2023-11-22 21:27:50,832 [INFO] shopapp.views: Rendering shop index
+2023-11-22 21:28:01,405 [ERROR] django.request: Internal Server Error: /ru/shop/products/
+Traceback (most recent call last):
+  File "/home/user/Документы/Skillbox/PyCharmProjects/Education/Advanced/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/user/Документы/Skillbox/PyCharmProjects/Education/Advanced/venv/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 328, in execute
+    return super().execute(query, params)
+sqlite3.OperationalError: no such table: shopapp_product
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/user/Документы/Skillbox/PyCharmProjects/Education/Advanced/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/user/Документы/Skillbox/PyCharmProjects/Education/Advanced/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/user/Документы/Skillbox/PyCharmProjects/Education/Advanced/venv/lib/python3.10/site-packages/sentry_sdk/integrations/django/views.py", line 38, in sentry_patched_render
+    return old_render(self)
+  File "/home/user/Документы/Skillbox/PyCharmProjects/Education/Advanced/venv/lib/python3.10/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/user/Документы/Skillbox/PyCharmProjects/Education/Advanced/venv/lib/python3.10/site-packages/sentry_sdk/integrations/django/templates.py", line 75, in rendered_content
+    return real_rendered_content.fget(self)
+  File "/home/user/Документы/Skillbox/PyCharmProjects/Education/Advanced/venv/lib/python3.10/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "/home/user/Документы/Skillbox/PyCharmProjects/Education/Advanced/venv/lib/python3.10/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/user/Документы/Skillbox/PyCharmProjects/Education/Advanced/venv/lib/python3.10/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/user/Документы/Skillbox/PyCharmProjects/Education/Advanced/venv/lib/python3.10/site-packages/django/test/utils.py", line 112, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/user/Документы/Skillbox/PyCharmProjects/Education/Advanced/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/user/Документы/Skillbox/PyCharmProjects/Education/Advanced/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/user/Документы/Skillbox/PyCharmProjects/Education/Advanced/venv/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/user/Документы/Skillbox/PyCharmProjects/Education/Advanced/venv/lib/python3.10/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/user/Документы/Skillbox/PyCharmProjects/Education/Advanced/venv/lib/python3.10/site-packages/django/test/utils.py", line 112, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/user/Документы/Skillbox/PyCharmProjects/Education/Advanced/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/user/Документы/Skillbox/PyCharmProjects/Education/Advanced/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/user/Документы/Skillbox/PyCharmProjects/Education/Advanced/venv/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/user/Документы/Skillbox/PyCharmProjects/Education/Advanced/venv/lib/python3.10/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/home/user/Документы/Skillbox/PyCharmProjects/Education/Advanced/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/user/Документы/Skillbox/PyCharmProjects/Education/Advanced/venv/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/user/Документы/Skillbox/PyCharmProjects/Education/Advanced/venv/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/user/Документы/Skillbox/PyCharmProjects/Education/Advanced/venv/lib/python3.10/site-packages/django/template/defaulttags.py", line 320, in render
+    if match:
+  File "/home/user/Документы/Skillbox/PyCharmProjects/Education/Advanced/venv/lib/python3.10/site-packages/django/db/models/query.py", line 412, in __bool__
+    self._fetch_all()
+  File "/home/user/Документы/Skillbox/PyCharmProjects/Education/Advanced/venv/lib/python3.10/site-packages/django/db/models/query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/user/Документы/Skillbox/PyCharmProjects/Education/Advanced/venv/lib/python3.10/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "/home/user/Документы/Skillbox/PyCharmProjects/Education/Advanced/venv/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/user/Документы/Skillbox/PyCharmProjects/Education/Advanced/venv/lib/python3.10/site-packages/sentry_sdk/integrations/django/__init__.py", line 628, in execute
+    return real_execute(self, sql, params)
+  File "/home/user/Документы/Skillbox/PyCharmProjects/Education/Advanced/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/home/user/Документы/Skillbox/PyCharmProjects/Education/Advanced/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/user/Документы/Skillbox/PyCharmProjects/Education/Advanced/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/user/Документы/Skillbox/PyCharmProjects/Education/Advanced/venv/lib/python3.10/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/user/Документы/Skillbox/PyCharmProjects/Education/Advanced/venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/user/Документы/Skillbox/PyCharmProjects/Education/Advanced/venv/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 328, in execute
+    return super().execute(query, params)
+django.db.utils.OperationalError: no such table: shopapp_product
+2023-11-22 21:29:21,979 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-11-22 21:30:28,906 [WARNING] django.request: Not Found: /static/admin/css/base.css
+2023-11-22 21:30:28,908 [WARNING] django.request: Not Found: /static/admin/css/dark_mode.css
+2023-11-22 21:30:28,911 [WARNING] django.request: Not Found: /static/admin/css/nav_sidebar.css
+2023-11-22 21:30:28,913 [WARNING] django.request: Not Found: /static/admin/css/login.css
+2023-11-22 21:30:28,916 [WARNING] django.request: Not Found: /static/admin/css/responsive.css
+2023-11-22 21:30:28,917 [WARNING] django.request: Not Found: /static/admin/js/nav_sidebar.js
+2023-11-22 21:30:28,919 [WARNING] django.request: Not Found: /static/admin/js/theme.js
+2023-11-22 21:30:31,312 [WARNING] django.request: Not Found: /static/admin/css/base.css
+2023-11-22 21:30:31,313 [WARNING] django.request: Not Found: /static/admin/css/dark_mode.css
+2023-11-22 21:30:31,315 [WARNING] django.request: Not Found: /static/admin/css/login.css
+2023-11-22 21:30:31,317 [WARNING] django.request: Not Found: /static/admin/css/responsive.css
+2023-11-22 21:30:31,318 [WARNING] django.request: Not Found: /static/admin/css/nav_sidebar.css
+2023-11-22 21:30:31,320 [WARNING] django.request: Not Found: /static/admin/js/theme.js
+2023-11-22 21:30:31,325 [WARNING] django.request: Not Found: /static/admin/js/nav_sidebar.js
+2023-11-22 21:30:34,319 [WARNING] django.request: Not Found: /static/admin/css/base.css
+2023-11-22 21:30:34,321 [WARNING] django.request: Not Found: /static/admin/css/dark_mode.css
+2023-11-22 21:30:34,322 [WARNING] django.request: Not Found: /static/admin/css/nav_sidebar.css
+2023-11-22 21:30:34,326 [WARNING] django.request: Not Found: /static/admin/css/login.css
+2023-11-22 21:30:34,327 [WARNING] django.request: Not Found: /static/admin/css/responsive.css
+2023-11-22 21:30:34,331 [WARNING] django.request: Not Found: /static/admin/js/theme.js
+2023-11-22 21:30:34,334 [WARNING] django.request: Not Found: /static/admin/js/nav_sidebar.js
+2023-11-22 21:30:35,784 [WARNING] django.request: Not Found: /static/admin/css/base.css
+2023-11-22 21:30:35,786 [WARNING] django.request: Not Found: /static/admin/css/dark_mode.css
+2023-11-22 21:30:35,788 [WARNING] django.request: Not Found: /static/admin/css/login.css
+2023-11-22 21:30:35,789 [WARNING] django.request: Not Found: /static/admin/css/responsive.css
+2023-11-22 21:30:35,790 [WARNING] django.request: Not Found: /static/admin/css/nav_sidebar.css
+2023-11-22 21:30:35,793 [WARNING] django.request: Not Found: /static/admin/js/theme.js
+2023-11-22 21:30:35,798 [WARNING] django.request: Not Found: /static/admin/js/nav_sidebar.js
+2023-11-22 21:31:02,733 [WARNING] django.request: Not Found: /
+2023-11-22 21:31:12,083 [WARNING] django.request: Not Found: /static/admin/css/base.css
+2023-11-22 21:31:12,086 [WARNING] django.request: Not Found: /static/admin/css/dark_mode.css
+2023-11-22 21:31:12,088 [WARNING] django.request: Not Found: /static/admin/css/login.css
+2023-11-22 21:31:12,090 [WARNING] django.request: Not Found: /static/admin/css/nav_sidebar.css
+2023-11-22 21:31:12,093 [WARNING] django.request: Not Found: /static/admin/js/theme.js
+2023-11-22 21:31:12,094 [WARNING] django.request: Not Found: /static/admin/css/responsive.css
+2023-11-22 21:31:12,099 [WARNING] django.request: Not Found: /static/admin/js/nav_sidebar.js
+2023-11-22 21:31:14,114 [WARNING] django.request: Not Found: /static/admin/css/base.css
+2023-11-22 21:31:14,116 [WARNING] django.request: Not Found: /static/admin/css/dark_mode.css
+2023-11-22 21:31:14,117 [WARNING] django.request: Not Found: /static/admin/css/nav_sidebar.css
+2023-11-22 21:31:14,119 [WARNING] django.request: Not Found: /static/admin/css/login.css
+2023-11-22 21:31:14,121 [WARNING] django.request: Not Found: /static/admin/css/responsive.css
+2023-11-22 21:31:14,124 [WARNING] django.request: Not Found: /static/admin/js/theme.js
+2023-11-22 21:31:14,129 [WARNING] django.request: Not Found: /static/admin/js/nav_sidebar.js
+2023-11-23 13:44:50,842 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-11-23 13:44:52,851 [WARNING] django.request: Not Found: /
+2023-11-23 13:44:52,888 [WARNING] django.request: Not Found: /favicon.ico
+2023-11-23 13:44:58,920 [WARNING] django.request: Not Found: /static/admin/css/base.css
+2023-11-23 13:44:58,922 [WARNING] django.request: Not Found: /static/admin/css/dark_mode.css
+2023-11-23 13:44:58,926 [WARNING] django.request: Not Found: /static/admin/css/nav_sidebar.css
+2023-11-23 13:44:58,929 [WARNING] django.request: Not Found: /static/admin/css/login.css
+2023-11-23 13:44:58,932 [WARNING] django.request: Not Found: /static/admin/css/responsive.css
+2023-11-23 13:44:58,935 [WARNING] django.request: Not Found: /static/admin/js/nav_sidebar.js
+2023-11-23 13:44:58,937 [WARNING] django.request: Not Found: /static/admin/js/theme.js
+2023-11-23 17:07:48,304 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-11-23 17:08:30,025 [WARNING] django.request: Not Found: /
+2023-11-23 17:08:38,387 [WARNING] django.request: Not Found: /static/admin/css/base.css
+2023-11-23 17:08:38,389 [WARNING] django.request: Not Found: /static/admin/css/dark_mode.css
+2023-11-23 17:08:38,390 [WARNING] django.request: Not Found: /static/admin/css/nav_sidebar.css
+2023-11-23 17:08:38,397 [WARNING] django.request: Not Found: /static/admin/css/login.css
+2023-11-23 17:08:38,398 [WARNING] django.request: Not Found: /static/admin/css/responsive.css
+2023-11-23 17:08:38,437 [WARNING] django.request: Not Found: /static/admin/js/theme.js
+2023-11-23 17:08:38,448 [WARNING] django.request: Not Found: /static/admin/js/nav_sidebar.js
+2023-11-23 17:08:40,177 [WARNING] django.request: Not Found: /static/admin/css/base.css
+2023-11-23 17:08:40,180 [WARNING] django.request: Not Found: /static/admin/css/dark_mode.css
+2023-11-23 17:08:40,181 [WARNING] django.request: Not Found: /static/admin/css/nav_sidebar.css
+2023-11-23 17:08:40,183 [WARNING] django.request: Not Found: /static/admin/css/login.css
+2023-11-23 17:08:40,187 [WARNING] django.request: Not Found: /static/admin/js/theme.js
+2023-11-23 17:08:40,190 [WARNING] django.request: Not Found: /static/admin/css/responsive.css
+2023-11-23 17:08:40,192 [WARNING] django.request: Not Found: /static/admin/js/nav_sidebar.js
+2023-11-23 17:08:42,802 [WARNING] django.request: Not Found: /static/admin/css/base.css
+2023-11-23 17:08:42,803 [WARNING] django.request: Not Found: /static/admin/css/dark_mode.css
+2023-11-23 17:08:42,806 [WARNING] django.request: Not Found: /static/admin/css/nav_sidebar.css
+2023-11-23 17:08:42,809 [WARNING] django.request: Not Found: /static/admin/css/login.css
+2023-11-23 17:08:42,810 [WARNING] django.request: Not Found: /static/admin/css/responsive.css
+2023-11-23 17:08:42,813 [WARNING] django.request: Not Found: /static/admin/js/theme.js
+2023-11-23 17:08:42,815 [WARNING] django.request: Not Found: /static/admin/js/nav_sidebar.js
+2023-11-23 17:35:59,747 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-11-23 17:36:05,120 [WARNING] django.request: Not Found: /
+2023-11-23 17:36:08,532 [WARNING] django.request: Not Found: /static/admin/css/dark_mode.css
+2023-11-23 17:36:08,533 [WARNING] django.request: Not Found: /static/admin/css/base.css
+2023-11-23 17:36:08,536 [WARNING] django.request: Not Found: /static/admin/css/nav_sidebar.css
+2023-11-23 17:36:08,540 [WARNING] django.request: Not Found: /static/admin/css/login.css
+2023-11-23 17:36:08,543 [WARNING] django.request: Not Found: /static/admin/css/responsive.css
+2023-11-23 17:36:08,546 [WARNING] django.request: Not Found: /static/admin/js/theme.js
+2023-11-23 17:36:08,588 [WARNING] django.request: Not Found: /static/admin/js/nav_sidebar.js
+2023-11-23 17:36:11,308 [INFO] shopapp.views: Rendering shop index

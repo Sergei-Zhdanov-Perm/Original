@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "mysite"
+version = "0.1.0"
+description = ""
+authors = ["Sergei Zhdanov <Sergei Zhdanov>"]
+
+
+[tool.poetry.dependencies]
+python = "^3.10"
+django-rest-framework = "^0.1.0"
+django = "^4.2.7"
+djangorestframework = "^3.14.0"
+django-filter = "^23.4"
+django-debug-toolbar = "^4.2.0"
+pillow = "^10.1.0"
+gunicorn = "^21.2.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

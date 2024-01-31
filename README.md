@@ -20,7 +20,8 @@
 Для запуска на локальном сервере скопируйте репозиторий в папку с проектом и создайте файл .env в корневой директории проекта, скопировав полное содержимое файла .env.template. Например, содержимое может быть таким: DJANGO_LOGLEVEL=INFO
 DJANGO_SECRET_KEY=nvmokfdsnovbijfdnbvnlsf
 DJANGO_DEBUG=1
-DJANGO_ALLOWED_HOSTS=http://127.0.0.1:8000
+DJANGO_ALLOWED_HOSTS=http://127.0.0.1:8000 .
+Установите зависимости с requirements.txt с помощью команды "pip install requirements.txt"
 Далее запустите локальный сервер из корневой директории проекта командой python manage.py runserver
 
 Если будет запрос авторизации, то суперюзер для сервера: admin / 12344321 (login / pass), для локального сервера: admin / 0990 (login / pass)
